@@ -1,0 +1,15 @@
+<h1>Add new category</h1>
+
+<%= form_with model: @group, url: groups_path(current_user) do |form| %>
+    <div>
+      <%= form.label :name%>      
+      <%= form.text_field :name, placeholder: 'Enter Category Name*', required: true %>
+    </div>
+
+    <div>
+      <%= form.label :icon %>
+      <%= form.text_field :icon, placeholder: 'Icon URL*', required: true %>
+    </div>
+
+    <%= form.submit %>
+<% end %>
