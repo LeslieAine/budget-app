@@ -1,0 +1,12 @@
+<h1>Categories</h1>
+<ul>
+  <% @groups.each_with_index do |group, index| %>
+    <li>
+      <p><%= group.name %></p>
+      <p></p>
+    </li>
+  <% end %>
+</ul>
+<div>
+  <button><%= link_to 'New Category', new_group_path %></button>
+</div>
