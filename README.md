@@ -5,7 +5,6 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-    - [🚀 Live Demo](#live-demo)
     - [🎬 Video Description](#video-demo)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
@@ -40,19 +39,11 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-Click on the link to view the app.
-
-- [Live Demo](https://budget-tracker-lkkh.onrender.com)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## 🚀 Video Description <a name="live-demo"></a>
 
 Click on the link to view the video description.
 
-- [Video Description](https://www.loom.com/share/eac704409e264b09ab2b896afe1a2302)
+- [Video Description](https://www.loom.com/share/8747d5233f6341ab8e83d9c977c4096a)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
