@@ -1,0 +1,38 @@
+<section class="registration_section">
+<div class="reg_bar">
+  <div class="reg_bar_content">
+    <i class="fa-solid fa-arrow-left icon"></i>
+    <h2 class="reg_bar_header">LOGIN</h2>
+  </div>
+</div>
+
+<div class="form_container">
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+  <%= f.label :email, class: "label" %><br />
+  <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'Email*', class: "input" %>
+  </div>
+
+  <div class="field">
+  <%= f.label :password, class: "label" %><br />
+  <%= f.password_field :password, autocomplete: "current-password", placeholder: 'Password*', class: "input" %>
+  </div>
+
+  <% if devise_mapping.rememberable? %>
+    <div class="field">
+    <%= f.check_box :remember_me, class: "checkbox" %>
+    <%= f.label :remember_me, class: "checkbox_text" %>
+    </div>
+  <% end %>
+
+  <div class="actions">
+  <%= f.submit "Log in", class: "submit_btn" %>
+  </div>
+<% end %>
+
+<div class="render_login_btn" >
+  <%= render "devise/shared/links" %>
+</div>
+</div>
+</section>
