@@ -14,11 +14,19 @@ class GroupsController < ApplicationController
 
     if @group.save
       flash[:success] = 'Category created successfully'
-      redirect_to root_path
+      redirect_to authenticated_root_path
     else
       flash[:danger] = 'Category could not be created'
       render :new
     end
+  end
+
+  def destroy
+    @group = Group.find(params[:id])
+    @group.destroy
+
+    flash[:notice] = 'Category has been successfully deleted'
+    redirect_to groups_path
   end
 
   private
