@@ -5,6 +5,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+    - [🚀 Live Demo](#live-demo)
     - [🎬 Video Description](#video-demo)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
@@ -38,6 +39,15 @@
 - **[View all transactions and total expenditure]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+Click on the link to view the app.
+
+- [Live Demo](https://budget-app-agi3.onrender.com)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## 🚀 Video Description <a name="live-demo"></a>
 
