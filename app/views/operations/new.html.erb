@@ -1,0 +1,19 @@
+<section class="main_section">
+<%= render 'shared/navbar' %>
+
+<div class="form_container categories_form">
+<%= form_with model: @operation, url: group_operations_path(@group) do |form| %>
+  <div class="field">
+    <%= form.label :name, class: "label" %><br>
+    <%= form.text_field :name, required: true, placeholder: 'Expense Name*', class: "input" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :amount, class: "label" %><br>
+    <%= form.number_field :amount, required: true, placeholder: 'Amount*', class: "input" %>
+  </div>
+
+  <%= form.submit "Create Transaction", class: "create_btn" %>
+<% end %>
+</div>
+</section>
