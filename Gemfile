@@ -79,3 +79,8 @@ gem 'devise'
 gem 'font-awesome-rails'
 
 gem 'rails-controller-testing'
+
+platform :mswin, :mingw, :x64_mingw do
+  gem "tzinfo-data"
+  gem "win32_api"
+end
