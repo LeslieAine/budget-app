@@ -1,15 +1,323 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.field {
+  margin-top: 5px;
+}
+
+.label {
+  display: none;
+}
+
+.input {
+  width: 350px;
+  padding: 10px;
+  background-color: #fff;
+  outline: none;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+.card_link {
+  text-decoration: none;
+  color: #000;
+}
+
+.date_time {
+  font-weight: 400;
+  color: #c0c0c0;
+}
+
+/* Splash Screen */
+.splash_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 1rem;
+  background-color: #d3d3d3;
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+.splash_header {
+  font-style: italic;
+  font-weight: 800;
+  font-size: 32px;
+}
+
+.login {
+  margin-top: 8rem;
+}
+
+.login_btn {
+  background-color: #3778c2;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  min-width: 350px;
+}
+
+.login_link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.signup {
+  margin-top: 10px;
+}
+
+.signup_btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  min-width: 350px;
+}
+
+.signup_link {
+  text-decoration: none;
+  color: #c0c0c0;
+}
+
+/* Splash Screen */
+
+/* signup and login page */
+.registration_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f2f1;
+  height: 100vh;
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+.reg_bar {
+  background-color: #3778c2;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.reg_bar_content {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  margin-left: 15px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.reg_bar_header {
+  color: #fff;
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 600;
+}
+
+.form_container {
+  margin-top: 2rem;
+}
+
+.submit_btn {
+  margin-top: 40px;
+  padding: 10px;
+  width: 370px;
+  background-color: #3778c2;
+  border: none;
+  border-radius: 5px;
+}
+
+.render_submit_btn {
+  margin-top: 10px;
+  padding: 10px;
+  width: 350px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.render_login_btn {
+  margin-top: 20px;
+}
+
+.checkbox {
+  margin-top: 10px;
+}
+
+.checkbox_text {
+  margin-top: 10px;
+}
+
+/* signup and login page */
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3778c2;
+  padding: 20px 10px;
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+.navbar_header {
+  font-size: 25px;
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+.nav_signout {
+  margin-right: 10px;
+}
+
+.nav_signout_link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav_signout_icon {
+  color: #fff;
+}
+
+/* Navbar styling */
+
+/* Categories Page Styling */
+.main_section {
+  background-color: #f0f2f1;
+  min-height: 100vh;
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+.categories_list {
+  margin-top: 2rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.category_item {
+  min-width: 350px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  margin-top: 15px;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+}
+
+.name_date {
+  flex: 1;
+  margin-left: 3.5rem;
+}
+
+.btn_div {
+  margin-top: 20rem;
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.new_category_btn {
+  width: 350px;
+  background-color: #5fb523;
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+.new_category_link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 28px;
+}
+
+.delete_btn {
+  border: none;
+  cursor: pointer;
+}
+
+.delete_icon {
+  color: #dc343b;
+}
+
+.name_section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.amount_section {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  gap: 5px;
+}
+
+/* Categories Page Styling */
+
+/* Transactions Page Styling */
+.total_amount {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 15px 3rem;
+  font-size: 25px;
+  background-color: #fff;
+  gap: 5px;
+}
+
+.new_transaction {
+  margin-top: 15rem;
+}
+
+.create_btn {
+  margin-top: 20px;
+  padding: 10px;
+  width: 370px;
+  background-color: #3778c2;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.categories_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.delete_category {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0 3rem;
+}
+
+.text_icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  border: 3px solid #dc343b;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+/* Transactions Page Styling */
