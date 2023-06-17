@@ -1,0 +1,20 @@
+<section class="main_section">
+<%= render 'shared/navbar' %>
+<ul class="categories_list">
+  <% @groups.each_with_index do |group, index| %>
+    <%= link_to group_operations_path(group), class: "card_link" do%>
+        <li class="category_item">
+          <img src= <%= group.icon %> alt = <%= group.name %> />
+          <div class="name_date">
+            <p><%= group.name %></p>
+            <p class="date_time"><%= group.created_at.strftime("%Y-%m-%d") %></p>
+          </div>
+          <p><%= group.operations.sum(:amount) %></p>
+        </li>
+      <% end %>
+  <% end %>
+</ul>
+<div class="btn_div">
+  <button class="new_category_btn"><%= link_to 'New Category', new_group_path, class: "new_category_link" %></button>
+</div>
+</section>

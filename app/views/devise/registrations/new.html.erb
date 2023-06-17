@@ -1,0 +1,43 @@
+<section class="registration_section">
+<div class="reg_bar">
+  <div class="reg_bar_content">
+    <i class="fa-solid fa-arrow-left icon"></i>
+    <h2 class="reg_bar_header">REGISTER</h2>
+  </div>
+</div>
+
+<div class="form_container">
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <%= f.label :name, class: "label" %><br />
+    <%= f.text_field :name, autofocus: true, autocomplete: "name", placeholder: 'Full Name*', class: "input" %>
+  </div>
+
+  <div class="field">
+  <%= f.label :email, class: "label" %><br />
+  <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'Email*', class: "input" %>
+  </div>
+
+  <div class="field">
+  <%= f.label :password, class: "label" %><br />
+  <%= f.password_field :password, autocomplete: "new-password", placeholder: 'Password (6 characters minimum)*', class: "input" %>
+  </div>
+
+  <div class="field">
+  <%= f.label :password_confirmation, class: "label" %><br />
+  <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: 'Confirm Password', class: "input" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign up", class: "submit_btn" %>
+  </div>
+<% end %>
+
+<div class="render_submit_btn">
+<%= render "devise/shared/links" %>
+</div>
+</div>
+</section>

@@ -1,0 +1,19 @@
+<section class="main_section">
+<%= render 'shared/navbar' %>
+
+<div class="form_container categories_form">
+<%= form_with model: @group, url: groups_path(current_user) do |form| %>
+    <div class="field">
+      <%= form.label :name, class: "label" %>      
+      <%= form.text_field :name, placeholder: 'Enter Category Name*', required: true, class: "input" %>
+    </div>
+
+    <div class="field">
+      <%= form.label :icon, class: "label" %>
+      <%= form.text_field :icon, placeholder: 'Icon URL*', required: true, class: "input" %>
+    </div>
+
+    <%= form.submit class: "create_btn" %>
+<% end %>
+</div>
+</section>
